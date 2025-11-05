@@ -1,0 +1,54 @@
+
+
+ body {
+  height: 100vh;
+background-image: url(./asset/wallpaper.jpg);
+background-size: cover;
+  font-family: 'Courier New', monospace;
+} 
+
+h1{
+    text-align: center;
+    align-items: center;
+    margin-top: 12rem;
+    
+}
+.clock{
+     text-align: center;
+    align-items: center;
+    border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* white background with 50% opacity */
+    padding: 20px;
+    width: 35vh;
+    height: 5vh;
+    font-size: 30px;
+    margin-left: 37rem;
+    border: 1px solid;
+     box-shadow: 0 0 30px rgba(244, 248, 248, 0.5);
+}
+
+#time{
+    color: black;
+    font-weight: bold;
+     /* opacity: 0.1; */
+ text-shadow: 0 0 10px rgb(222, 236, 236), 0 0 20px rgb(220, 225, 225), 0 0 40px cyan;
+  transition: all 0.3s ease;    
+}
+
+/* Additional responsive behavior */
+@media (max-width: 768px) {
+  .clock {
+     max-width: 30vw;
+    font-size: 5vw; /* Larger font for tablets */
+    padding: 5vw 8vw; /* Adjust padding for smaller devices */
+    margin-left: 20vw; 
+  }
+}
+
+@media (max-width: 480px) {
+  .clock {
+     max-width: 30vw;
+    font-size: 6vw; /* Even larger font for small screens */
+    padding: 5vw 8vw; /* Adjust padding accordingly */
+  }
+}
